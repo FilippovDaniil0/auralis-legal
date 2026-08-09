@@ -3,92 +3,95 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Auralis Privacy Policy</title>
+  <title>Moro Privacy Policy</title>
   <style>
-    :root { color-scheme: dark; --bg:#110d0a; --card:#1f1712; --text:#faf5ee; --muted:#cfc5bc; --accent:#e28d3d; }
-    body { margin:0; background:var(--bg); color:var(--text); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; line-height:1.65; }
-    main { max-width:820px; margin:0 auto; padding:48px 22px 72px; }
-    h1 { font-size:38px; line-height:1.1; margin:0 0 10px; }
-    h2 { color:var(--accent); font-size:20px; margin:34px 0 10px; }
+    :root {
+      color-scheme: dark;
+      --bg:#020817;
+      --card:rgba(12, 29, 56, .72);
+      --card-strong:rgba(16, 43, 82, .88);
+      --text:#f4f9ff;
+      --muted:#a9bdd6;
+      --accent:#59c7ff;
+      --accent-soft:rgba(89, 199, 255, .24);
+      --line:rgba(126, 203, 255, .28);
+    }
+    body {
+      margin:0;
+      min-height:100vh;
+      background:
+        radial-gradient(circle at 50% -10%, rgba(83, 190, 255, .26), transparent 34%),
+        radial-gradient(circle at 12% 12%, rgba(47, 114, 255, .18), transparent 28%),
+        linear-gradient(180deg, #031029 0%, var(--bg) 62%, #010612 100%);
+      color:var(--text);
+      font-family:-apple-system,BlinkMacSystemFont,"Inter","SF Pro Display","Segoe UI",sans-serif;
+      line-height:1.65;
+    }
+    main { max-width:820px; margin:0 auto; padding:52px 22px 78px; }
+    h1 { font-size:42px; line-height:1.05; margin:0 0 12px; letter-spacing:-.02em; }
+    h2 { color:var(--text); font-size:20px; margin:34px 0 10px; }
     p, li { color:var(--muted); font-size:16px; }
     ul { padding-left:22px; }
-    a { color:var(--accent); }
-    .card { background:var(--card); border:1px solid rgba(226,141,61,.18); border-radius:18px; padding:18px; margin:22px 0; }
-    .updated { color:var(--accent); font-weight:700; letter-spacing:.02em; }
+    a { color:var(--accent); text-decoration-color:var(--accent-soft); text-underline-offset:3px; }
+    .card {
+      background:linear-gradient(180deg, var(--card-strong), var(--card));
+      border:1px solid var(--line);
+      border-radius:24px;
+      padding:20px;
+      margin:24px 0;
+      box-shadow:0 22px 70px rgba(0, 0, 0, .26), inset 0 1px 0 rgba(255, 255, 255, .08);
+    }
+    .updated {
+      color:var(--accent);
+      font-weight:800;
+      letter-spacing:.12em;
+      text-transform:uppercase;
+      font-size:12px;
+    }
+    strong { color:var(--text); }
+    @media (max-width:560px) {
+      main { padding:34px 18px 58px; }
+      h1 { font-size:34px; }
+    }
   </style>
 </head>
 <body>
   <main>
     <p class="updated">Last updated: June 9, 2026</p>
     <h1>Privacy Policy</h1>
-    <p>This Privacy Policy explains how Auralis ("Auralis", "we", "us", or "our") handles information when you use the Auralis mobile application.</p>
+    <p>This Privacy Policy explains how Moro ("Moro", "we", "us", or "our") handles information when you use the Moro mobile application.</p>
 
     <div class="card">
-      <p>Auralis is a wellness and reflection app. It is not a medical, mental health, diagnostic, or emergency service. If you need urgent help, contact local emergency services or a qualified professional.</p>
+      <p>Moro is an anxiety relief and reflection app. It is not a medical, mental health, diagnostic, or emergency service. If you need urgent help, contact local emergency services or a qualified professional.</p>
     </div>
 
     <h2>Information You Provide</h2>
     <p>Depending on how you use the app, you may provide:</p>
     <ul>
       <li>name and email address entered during onboarding;</li>
-      <li>zodiac sign and onboarding answers;</li>
-      <li>mood ratings, daily logs, streaks, and reflection history;</li>
+      <li>onboarding answers and anxiety check-in responses;</li>
+      <li>mood ratings, daily logs, completed practices, streaks, and reflection history;</li>
       <li>notification preferences;</li>
       <li>subscription status and purchase information processed by the App Store, Google Play, and RevenueCat.</li>
     </ul>
 
     <h2>How We Use Information</h2>
-    <p>We use information to:</p>
-    <ul>
-      <li>personalize daily reflections, cards, and insights;</li>
-      <li>calculate streaks, medians, and mood statistics;</li>
-      <li>send local reminders if you enable notifications;</li>
-      <li>manage premium access and restore purchases;</li>
-      <li>improve app reliability and user experience.</li>
-    </ul>
+    <p>We use information to personalize calming practices, daily reflections, cards, and insights; calculate streaks, averages, and mood statistics; send local reminders; manage premium access; and improve app reliability.</p>
 
     <h2>AI Processing</h2>
-    <p>Auralis may send a limited version of your recent mood history, onboarding answers, and current app context to our backend on Supabase. The backend may use DeepSeek to generate daily content and AI insights. We do not send your password to AI providers.</p>
-    <p>AI-generated content is for reflection and general wellness support only. It should not be treated as professional advice.</p>
+    <p>Moro may send a limited version of your recent mood history, anxiety check-in answers, completed practices, and current app context to our backend on Supabase. The backend may use DeepSeek to generate daily content and AI insights. We do not send your password to AI providers.</p>
 
     <h2>Local Storage</h2>
-    <p>Some app data is stored locally on your device, including onboarding status, mood history, streaks, and cached daily content. You can delete local app data from the Profile screen by using "Delete local account", or by deleting the app from your device.</p>
+    <p>Some app data is stored locally on your device, including onboarding status, mood history, streaks, completed practices, and cached daily content. You can delete app data from the Profile screen by using "Delete account", or by deleting the app from your device.</p>
 
     <h2>Third-Party Services</h2>
-    <p>Auralis may use the following services:</p>
-    <ul>
-      <li><strong>Supabase</strong> for backend functions and content caching;</li>
-      <li><strong>DeepSeek</strong> for AI-generated reflections and insights;</li>
-      <li><strong>RevenueCat</strong> for subscription status and purchase management;</li>
-      <li><strong>Apple App Store and Google Play</strong> for payment processing and subscription management.</li>
-    </ul>
-    <p>These services process data according to their own privacy policies and terms.</p>
+    <p>Moro may use Supabase, DeepSeek, RevenueCat, Apple App Store, and Google Play. These services process data according to their own privacy policies and terms.</p>
 
     <h2>Payments</h2>
-    <p>Payments are processed by Apple or Google. We do not receive or store your full payment card details. Subscription status may be shared with RevenueCat so the app can unlock premium access and restore purchases.</p>
+    <p>Payments are processed by Apple or Google. We do not receive or store your full payment card details.</p>
 
     <h2>Notifications</h2>
-    <p>If you enable notifications, Auralis may schedule local reminders on your device. You can disable notifications in the app or in your device settings.</p>
-
-    <h2>Data Retention</h2>
-    <p>Local data remains on your device until you delete it, reset the app, or uninstall the app. Cached AI content may be stored by our backend to reduce repeated generation and improve performance.</p>
-
-    <h2>Your Choices</h2>
-    <ul>
-      <li>You can disable notifications at any time.</li>
-      <li>You can manage or cancel subscriptions through your Apple or Google account settings.</li>
-      <li>You can delete local app data from the Profile screen.</li>
-      <li>You can contact us to request help with privacy questions.</li>
-    </ul>
-
-    <h2>Children's Privacy</h2>
-    <p>Auralis is not intended for children under 13. We do not knowingly collect personal information from children under 13.</p>
-
-    <h2>Security</h2>
-    <p>We use reasonable technical measures to protect app data. However, no method of transmission or storage is completely secure.</p>
-
-    <h2>Changes to This Policy</h2>
-    <p>We may update this Privacy Policy from time to time. The updated version will be posted on this page with a new "Last updated" date.</p>
+    <p>If you enable notifications, Moro may schedule local reminders on your device. You can disable notifications in the app or in your device settings.</p>
 
     <h2>Contact</h2>
     <p>If you have questions about this Privacy Policy, contact us at <a href="mailto:support@auralis.app">support@auralis.app</a>.</p>
